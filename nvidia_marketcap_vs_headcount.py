@@ -31,14 +31,14 @@ line2 = ax2.plot(years, employee_count, color=color_employees, marker='s', linew
 ax2.tick_params(axis='y', labelcolor=color_employees)
 # Setting ax2 limits to prevent the employee line from looking as steep as the market cap line
 # This visually highlights the huge divergence in scaling (121.5x vs 4.6x)
-ax2.set_ylim(0, 110000)
+ax2.set_ylim(0, 250000)
 
 # Add a prominent stats contrast card / text box
 stats_text = (
     "NVIDIA Efficiency Disparity (2016-2026):\n"
-    "📈 Market Cap: 121.5x growth ($40B → $4,858B)\n"
-    "👥 Headcount: 4.6x growth (9,227 → 42,000)\n"
-    "💰 Market Cap / Employee: 26.7x ($4.3M → $115.7M)"
+    "• Market Cap: 121.5x growth ($40B → $4,858B)\n"
+    "• Headcount: 4.6x growth (9,227 → 42,000)\n"
+    "• Market Cap / Employee: 26.7x ($4.3M → $115.7M)"
 )
 ax1.text(0.02, 0.95, stats_text, transform=ax1.transAxes, fontsize=11, fontweight='bold',
          verticalalignment='top', bbox=dict(boxstyle='round,pad=0.6', facecolor='#f8fafc', edgecolor='#cbd5e1', alpha=0.95))
@@ -69,8 +69,8 @@ ax1.annotate('Blackwell Scaling\n$4.8T+ Cap\n(121.5x Growth)',
 # Annotation 4: Corporate Headcount Surge (42k employees)
 ax2.annotate('Workforce\nSurges to 42k\n(4.6x Growth)', 
              xy=(2026, 42000), 
-             xytext=(2025.5, 55000),
-             arrowprops=dict(facecolor='blue', arrowstyle='->', lw=1, color='#1434A4'),
+             xytext=(2024.5, 65000),
+             arrowprops=dict(arrowstyle='->', lw=1, color='#1434A4'),
              fontsize=9, color='#1434A4', bbox=dict(boxstyle='round,pad=0.3', fc='yellow', alpha=0.3))
 
 # Helper function to prevent repetitive annotation block syntax
@@ -157,7 +157,7 @@ print(f"Saved plot to: {output_path}")
 if os.environ.get('DISPLAY') or os.name == 'nt':
     try:
         plt.show(block=False)
-        plt.pause(2)
+        plt.pause(100)
         plt.close()
     except Exception:
         pass
