@@ -2,7 +2,10 @@
 
 # 🚀 Nvidia Hyper-Growth: Valuation vs. Workforce Size (2016-2026)
 
-This repository analyzes and visualizes the relationship between NVIDIA's corporate headcount growth and its market capitalization expansion over a 10-year period (2016 to 2026).
+This repository hosts a data visualization analysis exploring **NVIDIA's hyper-growth** over the decade spanning 2016 to 2026. By mapping **NVIDIA's market capitalization** against its **global employee headcount**, this study highlights the unprecedented **workforce scaling leverage** and productivity efficiency achieved during the Generative AI revolution. It details key historical milestones including the Mellanox acquisition (2020), the H100 GPU Generative AI boom (2024), and Blackwell scaling (2026).
+
+## 🔍 Keywords & Topics
+`NVIDIA Market Cap` • `Workforce Efficiency` • `NVIDIA Headcount History` • `AI Hardware Surge` • `Mellanox Acquisition` • `Blackwell Architecture` • `Corporate Productivity Analysis`
 
 ## 💡 Key Insights
 
