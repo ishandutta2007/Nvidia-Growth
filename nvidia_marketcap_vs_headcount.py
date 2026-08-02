@@ -74,7 +74,7 @@ def add_annotations1(data_list, color_hex, bg_hex, text_y_offset):
         )
 
 # Apply automated annotations with strategic vertical spacing adjustments
-add_annotations1(market_cap_billions, '#76B900', '#f0f9ff', -12)
+add_annotations1(market_cap_billions, '#76B900', '#2c2c2c', -12)
 
 def add_annotations2(data_list, color_hex, bg_hex, text_y_offset):
     for i, count in enumerate(data_list):
