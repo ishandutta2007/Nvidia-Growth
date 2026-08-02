@@ -33,14 +33,14 @@ ax2.tick_params(axis='y', labelcolor=color_employees)
 # Annotation 1: 2020 Mellanox Acquisition & Work-from-Home Demand
 ax1.annotate('Mellanox Buy\n& WFH Spike', 
              xy=(2020, 314.0), 
-             xytext=(2018, 700),
+             xytext=(2018.5, 1200),
              arrowprops=dict(facecolor='black', arrowstyle='->', lw=1),
              fontsize=9, bbox=dict(boxstyle='round,pad=0.3', fc='yellow', alpha=0.3))
 
 # Annotation 2: 2024 Generative AI Explosion (H100 GPUs)
 ax1.annotate('H100 Launch\nGenerative AI Boom', 
              xy=(2024, 2147.0), 
-             xytext=(2021, 2300),
+             xytext=(2021.5, 2400),
              arrowprops=dict(facecolor='black', arrowstyle='->', lw=1),
              fontsize=9, bbox=dict(boxstyle='round,pad=0.3', fc='yellow', alpha=0.3))
 
@@ -54,9 +54,9 @@ ax1.annotate('Blackwell Scaling\n$4.8T+ Cap',
 # Annotation 4: Corporate Headcount Surge (42k employees)
 ax2.annotate('Workforce\nSurges to 42k', 
              xy=(2026, 42000), 
-             xytext=(2024, 45000),
+             xytext=(2025.5, 35000),
              arrowprops=dict(facecolor='blue', arrowstyle='->', lw=1, color='#1434A4'),
-             fontsize=9, color='#1434A4')
+             fontsize=9, color='#1434A4', bbox=dict(boxstyle='round,pad=0.3', fc='yellow', alpha=0.3))
 
 # Helper function to prevent repetitive annotation block syntax
 def add_annotations1(data_list, color_hex, bg_hex, text_y_offset):
@@ -74,7 +74,7 @@ def add_annotations1(data_list, color_hex, bg_hex, text_y_offset):
         )
 
 # Apply automated annotations with strategic vertical spacing adjustments
-add_annotations1(market_cap_billions, '#0369a1', '#f0f9ff', -12)
+add_annotations1(market_cap_billions, '#76B900', '#f0f9ff', -12)
 
 def add_annotations2(data_list, color_hex, bg_hex, text_y_offset):
     for i, count in enumerate(data_list):
@@ -91,7 +91,7 @@ def add_annotations2(data_list, color_hex, bg_hex, text_y_offset):
         )
 
 # Apply automated annotations with strategic vertical spacing adjustments
-add_annotations2(employee_count, '#0369a1', '#f0f9ff', -12)
+add_annotations2(employee_count, '#0369a1', '#f0f9ff', 12)
 
 # ------------------ CODE ANNOTATIONS END HERE ------------------
 
