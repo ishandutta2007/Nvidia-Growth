@@ -44,3 +44,14 @@ python nvidia_marketcap_vs_headcount.py
 ```
 
 The output plot will be saved in `assets/nvidia_growth.png`.
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FNvidia-Growth&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Nvidia-Growth&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Nvidia-Growth&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Nvidia-Growth&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
