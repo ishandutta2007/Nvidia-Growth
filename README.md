@@ -2,7 +2,7 @@
 
 # 🚀 Nvidia Hyper-Growth: Valuation vs. Workforce Size (2016-2026)
 
-<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a><a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 This repository hosts a data visualization analysis exploring **NVIDIA's hyper-growth** over the decade spanning 2016 to 2026. By mapping **NVIDIA's market capitalization** against its **global employee headcount**, this study highlights the unprecedented **workforce scaling leverage** and productivity efficiency achieved during the Generative AI revolution. It details key historical milestones including the Mellanox acquisition (2020), the H100 GPU Generative AI boom (2024), and Blackwell scaling (2026).
 
