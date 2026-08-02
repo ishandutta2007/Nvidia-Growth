@@ -1,3 +1,5 @@
+![Nvidia Growth Banner](assets/banner.svg)
+
 # Nvidia Hyper-Growth: Valuation vs. Workforce Size (2016-2026)
 
 This repository analyzes and visualizes the relationship between NVIDIA's corporate headcount growth and its market capitalization expansion over a 10-year period (2016 to 2026).

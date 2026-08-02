@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a13" />
+    </linearGradient>
+
+    <!-- Nvidia Glowing Green Gradient -->
+    <linearGradient id="nvidiaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#76B900" />
+      <stop offset="100%" stop-color="#a3e635" />
+    </linearGradient>
+
+    <!-- Blue/Indigo Glow Gradient for Employees -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Animations for Dynamic Aspect */
+    @keyframes drawLine {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { filter: drop-shadow(0 0 5px rgba(118, 185, 0, 0.4)); }
+      50% { filter: drop-shadow(0 0 15px rgba(118, 185, 0, 0.8)); }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(10px, -15px); }
+    }
+    
+    .grid {
+      stroke: #1f2937;
+      stroke-width: 1;
+      opacity: 0.4;
+    }
+    .glowing-trend {
+      stroke: url(#nvidiaGrad);
+      stroke-width: 4;
+      fill: none;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: drawLine 3s ease-out forwards, pulseGlow 3s infinite alternate;
+    }
+    .headcount-trend {
+      stroke: url(#blueGrad);
+      stroke-width: 3;
+      fill: none;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: drawLine 4s ease-out forwards;
+      opacity: 0.8;
+    }
+    .title-text {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-weight: 900;
+      fill: #ffffff;
+      letter-spacing: 4px;
+    }
+    .subtitle-text {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-weight: 500;
+      fill: #9ca3af;
+      letter-spacing: 2px;
+    }
+    .accent-green {
+      fill: #76B900;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="250" fill="url(#bgGrad)" />
+
+  <!-- Animated Tech Grid Background -->
+  <g class="grid">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="100" y1="0" x2="100" y2="250" />
+    <line x1="200" y1="0" x2="200" y2="250" />
+    <line x1="300" y1="0" x2="300" y2="250" />
+    <line x1="400" y1="0" x2="400" y2="250" />
+    <line x1="500" y1="0" x2="500" y2="250" />
+    <line x1="600" y1="0" x2="600" y2="250" />
+    <line x1="700" y1="0" x2="700" y2="250" />
+  </g>
+
+  <!-- Animated Glowing Curves representing the growth curves -->
+  <!-- Market Cap Trendline (Exponential, Green) -->
+  <path class="glowing-trend" d="M 50 200 Q 200 190 350 160 T 650 90 T 750 40" />
+  <!-- Headcount Trendline (Linear, Blue) -->
+  <path class="headcount-trend" d="M 50 200 L 225 185 L 400 170 L 575 155 L 750 140" />
+
+  <!-- Interactive Nodes (Data Points) -->
+  <circle cx="750" cy="40" r="6" fill="#76B900" filter="url(#glow)" />
+  <circle cx="750" cy="140" r="5" fill="#3b82f6" />
+  
+  <!-- Banner Text -->
+  <g transform="translate(60, 110)">
+    <text class="title-text" x="0" y="0" font-size="34">NVIDIA <tspan class="accent-green">GROWTH</tspan> HUB</text>
+    <text class="subtitle-text" x="0" y="30" font-size="12">10-YEAR HISTORICAL VISUALIZATION &amp; ANALYSIS</text>
+    <text class="subtitle-text" x="0" y="50" font-size="10" fill="#6b7280">VALUATION LEVERAGE: 121.5x MARKET CAP vs 4.6x HEADCOUNT</text>
+  </g>
+</svg>
