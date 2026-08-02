@@ -58,6 +58,41 @@ ax2.annotate('Workforce\nSurges to 42k',
              arrowprops=dict(facecolor='blue', arrowstyle='->', lw=1, color='#1434A4'),
              fontsize=9, color='#1434A4')
 
+# Helper function to prevent repetitive annotation block syntax
+def add_annotations1(data_list, color_hex, bg_hex, text_y_offset):
+    for i, count in enumerate(data_list):
+        ax1.annotate(
+            f"{count:,}", 
+            (years[i], data_list[i]), 
+            textcoords="offset points", 
+            xytext=(0, text_y_offset), 
+            ha='center', 
+            fontsize=9, 
+            fontweight='bold',
+            color=color_hex,
+            bbox=dict(boxstyle="round,pad=0.2", fc=bg_hex, ec=color_hex, lw=1, alpha=0.85)
+        )
+
+# Apply automated annotations with strategic vertical spacing adjustments
+add_annotations1(market_cap_billions, '#0369a1', '#f0f9ff', -12)
+
+def add_annotations2(data_list, color_hex, bg_hex, text_y_offset):
+    for i, count in enumerate(data_list):
+        ax2.annotate(
+            f"{count:,}", 
+            (years[i], data_list[i]), 
+            textcoords="offset points", 
+            xytext=(0, text_y_offset), 
+            ha='center', 
+            fontsize=9, 
+            fontweight='bold',
+            color=color_hex,
+            bbox=dict(boxstyle="round,pad=0.2", fc=bg_hex, ec=color_hex, lw=1, alpha=0.85)
+        )
+
+# Apply automated annotations with strategic vertical spacing adjustments
+add_annotations2(employee_count, '#0369a1', '#f0f9ff', -12)
+
 # ------------------ CODE ANNOTATIONS END HERE ------------------
 
 # Structure and consolidate the legends
